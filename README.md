@@ -40,6 +40,11 @@ Install Docker by following the [official docker docs](https://docs.docker.com/e
 sudo pacman -S docker python
 ```
 
+- Install pip3:
+```shell script
+sudo apt install python3-pip
+```
+
 - Install dependencies for running setup scripts:
 ```shell script
 pip3 install -r requirements-cli.txt
@@ -139,3 +144,19 @@ For using your premium accounts in youtube-dl, edit the netrc file (in the root 
 machine host login username password my_youtube_password
 ```
 where host is the name of extractor (eg. youtube, twitch). Multiple accounts of different hosts can be added each separated by a new line
+
+# Set bot commands
+```
+help - Get help
+mirror - + [download_url][magnet_link]: Start mirroring the link to google drive
+unzipmirror - + [download_url][magnet_link] : Starts mirroring and if downloaded file is any archive , extracts it to google drive
+tarmirror - + [download_url][magnet_link]: Start mirroring and upload the archived (.tar) version of the download
+watch - + [youtube-dl supported link]: Mirror through youtube-dl. Click /watch for more help.
+tarwatch - + [youtube-dl supported link]: Mirror through youtube-dl and tar before uploading
+cancel - Reply to the message by which the download was initiated and that download will be cancelled
+status - Shows a status of all the downloads
+list - + [search term]: Searches the search term in the Google drive, if found replies with the link
+stats - Show Stats of the machine the bot is hosted on
+authorize - Authorize a chat or a user to use the bot (Can only be invoked by owner of the bot)
+log - Get a log file of the bot. Handy for getting crash reports
+```
