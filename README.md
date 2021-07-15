@@ -32,7 +32,7 @@ For Debian based distros
 ```
 sudo apt install python3
 ```
-Install Docker by following the [official docker docs](https://docs.docker.com/engine/install/debian/)
+Install Docker by following the [official docker docs](https://docs.docker.com/engine/install/debian/) (`uname -a` to see your Linux core edition)
 
 
 - For Arch and it's derivatives:
